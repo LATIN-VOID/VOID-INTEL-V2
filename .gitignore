@@ -1,0 +1,5 @@
+# Ignore runtime files and secrets
+.env
+users.json
+__pycache__/
+*.pyc
