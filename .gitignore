@@ -1,0 +1,4 @@
+void_intel.db
+__pycache__/
+.env
+*.pyc
