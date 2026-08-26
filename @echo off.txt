@@ -1,0 +1,17 @@
+@echo off
+title Network Monitor
+
+:LOOP
+cls
+echo ==========================
+echo   NETWORK CONNECTIONS
+echo ==========================
+echo.
+
+netstat -ano | findstr ESTABLISHED
+
+echo.
+echo Checking again in 10 seconds...
+timeout /t 10 >nul
+
+goto LOOP
